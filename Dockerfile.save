@@ -1,0 +1,11 @@
+FROM ubuntu
+
+MAINTAINER Barak Raz <raz.barak@gmail.com>
+
+Run apt-get update && apt-get install -y openssh-server
+
+Run mkdir -p /var/run/sshd
+
+Run echo 'root:demo' | chpasswd
+
+echo 'root:demo' | chpasswd
